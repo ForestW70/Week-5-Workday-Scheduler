@@ -60,7 +60,6 @@ li {
 }
 
 .area-def {
-    margin-right: 20px;
     padding: 30px 10px;
 }
 
@@ -103,18 +102,16 @@ li {
 }
 
 .btn {
-    background-color: rgb(179, 179, 236);
-    font-size: 10px;
-    font-weight: 900;
-    border: 22px dashed rgb(0 123 255 / 50%);
+    background-color: rgb(144 167 145);
+    font-size: 25px;
+    border: 2px solid rgb(23 39 56 / 50%);
 }
 
 .cal-content li {
     border: .2px solid black;
     border-radius: 5px;
     display: flex;
-    padding: 10px;
-    margin: 2px auto;
+    margin: 5px auto;
 }
 
 
@@ -130,3 +127,9 @@ li {
     border-radius: .25rem;
 }
   
+
+767
+
+@media screen and (max-width: 767px) {
+    
+}

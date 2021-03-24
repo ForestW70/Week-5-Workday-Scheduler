@@ -2,23 +2,29 @@
 const saveButtons = document.querySelectorAll(".btn");
 const timeBlocks = document.querySelectorAll("li");
 
+
 let today = moment();
 let currentHour = today.hour();
 
 
+$("#resetDay").on("click", (e) => {
+    localStorage.clear();
+    location.reload();
+    console.log("Welcome to a wonderful new day 🌞");
+})
 
 
 timeBlocks.forEach(function(hourLi, index) {
-    if (index+12 < currentHour) {
+    if (index+9 < currentHour) {
         hourLi.setAttribute("class", "past");
-    } else if (index+12 == currentHour) {
+    } else if (index+9 == currentHour) {
         hourLi.setAttribute("class", "present");
     } else {
         hourLi.setAttribute("class", "future");
     }
 
     if (currentHour == 0) {
-        hourLi.setAttribute("class", "");
+        hourLi.setAttribute("class", "future");
     }
 })
 
@@ -51,6 +57,7 @@ saveButtons.forEach(function (element) {
         renderMeeting();
     })
 })
+
 
 
 
