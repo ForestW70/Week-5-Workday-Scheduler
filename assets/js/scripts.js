@@ -7,10 +7,15 @@ let today = moment();
 let currentHour = today.hour();
 
 // button to display at top of the screen to reset your days events. 
+// Added a confirmation alert in an if statement so you dont accidentilly reset your events.
 $("#resetDay").on("click", (e) => {
-    localStorage.clear();
-    location.reload();
-    console.log("Welcome to a wonderful new day 🌞");
+    if (confirm("Are you sure?")) {
+        localStorage.clear();
+        location.reload();
+        console.log("Welcome to a wonderful new day 🌞");
+    } else {
+        console.log("good luck on the rest of your day!");
+    }
 })
 
 // here I use forEach to cylce through all save buttons and add an event listener to them that saves the event and renders the event.
@@ -25,7 +30,7 @@ saveButtons.forEach(function (element) {
 
 // Here is where I dynamically change the timeblock's class based on the current time.
 // for each of our list elements (each hour's block), I want to check if the block's set time is less than, equal to, or greater than the current hour variable.
-// based on where it lands within the if loop, the class will be changed to past, present, or future.
+// based on where it lands within the if statement, the class will be changed to past, present, or future.
 // index + 9 creates a way to compare our list element to the current hour, since current hour is between 0-24, and index + 9 will let our first element = 9(am).
 // the last if statement is checking when hour reaches 0 (new day), the classes will all reset to future. (likely not necessary, but it was hard to test these time sensitive functions.)
 timeBlocks.forEach(function(hourLi, index) {
