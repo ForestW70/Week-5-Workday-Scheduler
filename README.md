@@ -3,6 +3,7 @@ MIT - ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)(https
 <!-- Original deployment date: March 24th, 2021 -->
 
 ## Table of Contents:
+- [This week's concepts](#this-weeks-concepts)
 - [Tech used](#tech-used)
 - [Project description](#project-description)
 - [Usage instructions](#usage-instructions)
@@ -15,6 +16,12 @@ MIT - ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)(https
 
 ### About This Project
 
+* # This weeks concepts:
+  1. Link CDNs
+  2. JQuery
+  3. Moment.js
+  4. Local storage
+
 * # Tech used:
   1. HTML
   2. CSS
@@ -22,10 +29,10 @@ MIT - ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)(https
   4. JQuery
 
 * # Project description:
-  Does your busy lifestyle demand a high level of hourly planning? If so, this work day schedular is for you. You have the ability to submit events, meetings, or tasks on an hour-by-hour basis for each day's business hours. This planner shows you a visual representation of the days progress by display past, present, and future events. You may choose to clear all events once your day is completed so you can finally relax for those last 2-4 hours before having to start your life back up the next morning. 
+  Given a need to track my busy schedule, I created an app that lets you schedule activities throughout the day, hour by hour. Uses moment.js to keep track of the current time, and shows visually where you are at in the day.
 
 * # Usage instructions
-  Fill out each hour's field to keep track of events moment-by-moment.
+  Fill out each hour's field to keep track of events moment-by-moment. Color coordinated to show you where you are in the day; red are hours passed, green is the current hour, and grey are hours later in the day. You may also edit an hour's activities, or clear your day entirely.
 
 * # Project installation
   1. Visit the deployment link
@@ -33,7 +40,7 @@ MIT - ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)(https
   3. Enjoy.
      
 * # Additional comments
-  - I found it hard to fully implement jquery into this project, I think becuase I've had to use Javascript for all previous projects so my familiarity with jquery is minimal. things that I thought would work (like using $(".btn) instead of document.querySelectAll) turned out to not work. I suspect it breaks when I am mixing jquery and vanilla js (like in the forEach), so this was the reason I couldnt fully implement jquery syntax.
+(Mar/24/21)  
 
   - I explained my use of Index + 9 in the js comments, but basically it was a hacky way to assign my list element time position and compare it to the current hour.
 
@@ -41,7 +48,7 @@ MIT - ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)(https
 
   - I wanted to create functionality where if a new day starts, the page will automatically clear all events and start you with a fresh sheet, but I was unsure how/where I could put this, and without the ability to test at certain times I didnt know how I could confirm that it works, so instead I opted to create a button that clears all events for when you want to start a new day.
 
-  - Although the time displayed on the webpage is correct, it does not change until you refresh the page. I was unable to test if the classes will change when an hour has passed without refreshing the page, but my guess would be that it wont change until you refresh.
+  - Although the time displayed on the webpage is correct, it does not change until you refresh the page. Further testing required.
 
 
 #### Contribution information 
