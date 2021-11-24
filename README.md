@@ -69,5 +69,5 @@ MIT - ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)(https
   - ![Main page](./assets/images/planner-page-reg-size.png)
 
 * Links:
-  - [Repo page](https://github.com/ForestW70/hw5workdayscheduler)
-  - [Deployed page](https://forestw70.github.io/hw5workdayscheduler/)
+  - [Repo page](https://github.com/ForestW70/Week-5-Workday-Scheduler)
+  - [Deployed page](https://forestw70.github.io/Week-5-Workday-Scheduler/)
